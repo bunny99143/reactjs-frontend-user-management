@@ -39,7 +39,9 @@ export default function Forms(props) {
     validate,
     
     onSubmit:  (values,  { setSubmitting, resetForm }) => {
-      {props.isMode==="Edit"?props.updateUser(props.user._id,values):props.createUser(values)}
+      {
+        props.isMode==="Edit" ? props.updateUser(props.user._id,values):props.createUser(values)
+      }
       resetForm({});
     }
   });
