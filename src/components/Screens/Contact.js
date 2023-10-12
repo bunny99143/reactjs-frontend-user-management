@@ -13,7 +13,7 @@ function Contact() {
             padding: '40px',
             textAign: 'center',
             }}>
-              <h2>Fill the form and get it touch</h2>
+              <h2>Fill the form and get in Touch</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac justo id odio volutpat vestibulum. Aenean non aliquam mi.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac justo id odio volutpat vestibulum. Aenean non aliquam mi.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac justo id odio volutpat vestibulum. Aenean non aliquam mi.</p>
