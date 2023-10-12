@@ -32,7 +32,7 @@ export default function Tables(props) {
               <TableCell >Name</TableCell>
               <TableCell >Email</TableCell>
               <TableCell >Phone Number</TableCell>
-              <TableCell align="right">Action</TableCell>
+              <TableCell style={{ width: 90 }} align="right">Action</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

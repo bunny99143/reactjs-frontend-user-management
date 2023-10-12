@@ -6,8 +6,10 @@ import ConformationBox from '../ConformationBox';
 import axios from "axios";
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Home() {
+
   const API_BASE_URL="https://witty-hare-drawers.cyclic.app/";
   const [user,setUser]=useState({
               "name":'',
@@ -43,6 +45,7 @@ export default function Home() {
         setIsMode("Add")
         handleClose()
         setselectedUserid("")
+        toast.success('User deleted successfully.');
     });    
   };
 
@@ -94,7 +97,8 @@ export default function Home() {
               "email":'',
               "phone_number":"",
             });
-          }        
+          }
+          toast.success('User updated successfully.');
       });
   }  
 
@@ -111,6 +115,8 @@ export default function Home() {
             "email":'',
             "phone_number":"",
           })
+          toast.success('User created successfully.');
+
       });
   } 
 
@@ -124,8 +130,8 @@ export default function Home() {
 
   return(
     <>
-        <h2 style={{textAlign:'center'}}>Home Page</h2>
-        <Grid container >
+      <Toaster />
+        <Grid container style={{marginTop:'85px'}}>
             
         <ConformationBox open={open} setOpen={setOpen}  handleClose={handleClose} deleteUser={deleteUser}/>
         <Grid item xs={7} style={{borderRight: '4px solid '}}  justifyContent="center" alignItems="center">
